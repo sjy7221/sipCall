@@ -1,0 +1,34 @@
+server:
+  port: 8080
+spring:
+#  datasource:
+#    url: jdbc:p6spy:mysql://192.168.110.109:3306/judge_interface2?characterEncoding=utf-8&charset=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+#    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+#    username: root
+#    password: 123456
+#  redis:
+#    # Redis数据库索引（默认为0）
+#    database: 0
+#    # Redis服务器地址
+#    host: 39.96.53.79
+#    # Redis服务器连接端口
+#    port: 6379
+#    # Redis服务器连接密码（默认为空）
+#    password: 123456
+#    # 连接池最大连接数（使用负值表示没有限制）
+#    pool.max-active: 200
+#    # 连接池最大阻塞等待时间（使用负值表示没有限制）
+#    pool.max-wait: -1
+#    # 连接池中的最大空闲连接
+#    pool.max-idle: 10
+#    # 连接池中的最小空闲连接
+#    pool.min-idle: 0
+#    # 连接超时时间（毫秒）
+#    timeout: 1000
+## 资源存储路径
+#source:
+#  url: http://60.205.180.13:81/judge
+#mock:
+#  case-search-debug: true
+#H5:
+#  url: http://product.bzfar.com/sms/dist/index.html?id=

@@ -1,0 +1,75 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x0000000055036547, pid=34808, tid=0x00000000000c7f74
+#
+# JRE version: OpenJDK Runtime Environment (8.0_372-b07) (build 1.8.0_372-b07)
+# Java VM: OpenJDK 64-Bit Server VM (25.372-b07 mixed mode windows-amd64 compressed oops)
+# Problematic frame:
+# V  [jvm.dll+0x1e6547]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://github.com/corretto/corretto-8/issues/
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001d14d0e8800):  JavaThread "Thread-201205" [_thread_in_vm, id=819060, stack(0x000000fe00100000,0x000000fe00200000)]
+
+siginfo: ExceptionCode=0xc0000005, writing address 0x000000fe001fa2a0
+
+Registers:
+RAX=0x000000fe001fa2a0, RBX=0x0000000000000006, RCX=0x0000000000005000, RDX=0x000001d14c7c1218
+RSP=0x000000fe001ff2a0, RBP=0x0000000000000000, RSI=0x000000fe001ff2a0, RDI=0x0000000000000006
+R8 =0x0000000000000006, R9 =0x000001d14bb40610, R10=0x000001d0a9b06168, R11=0x000000fe001ff690
+R12=0x000000fe001ff600, R13=0x000001d14d0e8800, R14=0x000001d14d0e8800, R15=0x0000000000000000
+RIP=0x0000000055036547, EFLAGS=0x0000000000010206
+
+Top of Stack: (sp=0x000000fe001ff2a0)
+0x000000fe001ff2a0:   000001d14d0e8800 000001d14d0e8800
+0x000000fe001ff2b0:   0000000000000000 000001d14d0e8800
+0x000000fe001ff2c0:   000001d0a9b06168 0000000055036a26
+0x000000fe001ff2d0:   000000fe001ff3d0 000000fe001ff368
+0x000000fe001ff2e0:   000001d14bb40610 0000000000000000
+0x000000fe001ff2f0:   0000000000000001 0000000054ef5013
+0x000000fe001ff300:   000000fe001ff340 000000fe001ff3d0
+0x000000fe001ff310:   000001d0a9b06168 000001d14d0e8800
+0x000000fe001ff320:   000001d090f46d20 000001d0a9b06168
+0x000000fe001ff330:   000001d14d0e8800 000001d14d0e8800
+0x000000fe001ff340:   000001d0a9b06168 000001d0a9b06168
+0x000000fe001ff350:   000001d14d0e8800 000000fe001ff698
+0x000000fe001ff360:   000000fe001ff470 000001d148315eb0
+0x000000fe001ff370:   0000000000000005 000001d0a9b06168
+0x000000fe001ff380:   000001d14d0e8800 0000000054ef4bbb
+0x000000fe001ff390:   000001d14bb40610 00000007c0006a20 
+
+Instructions: (pc=0x0000000055036547)
+0x0000000055036527:   7c 24 38 8b fb 33 ed 66 90 e8 2b 8d 08 00 ff c3
+0x0000000055036537:   48 63 c8 48 8b c6 48 0f af cf 48 ff c7 48 2b c1
+0x0000000055036547:   89 28 48 63 c3 48 3b 05 8d e0 5a 00 7e db 48 8b
+0x0000000055036557:   7c 24 38 48 8b 6c 24 30 48 8b 5c 24 40 48 83 c4 
+
+
+Register to memory mapping:
+
+RAX=0x000000fe001fa2a0 is pointing into the stack for thread: 0x000001d14d0e8800
+RBX=0x0000000000000006 is an unknown value
+RCX=0x0000000000005000 is an unknown value
+RDX=0x000001d14c7c1218 is an unknown value
+RSP=0x000000fe001ff2a0 is pointing into the stack for thread: 0x000001d14d0e8800
+RBP=0x0000000000000000 is an unknown value
+RSI=0x000000fe001ff2a0 is pointing into the stack for thread: 0x000001d14d0e8800
+RDI=0x0000000000000006 is an unknown value
+R8 =0x0000000000000006 is an unknown value
+R9 =0x000001d14bb40610 is an unknown value
+R10={method} {0x000001d0a9b06170} 'run' '()V' in 'com/net/sipcall/sipcalling/manager/EventManager$3'
+R11=0x000000fe001ff690 is pointing into the stack for thread: 0x000001d14d0e8800
+R12=0x000000fe001ff600 is pointing into the stack for thread: 0x000001d14d0e8800
+R13=0x000001d14d0e8800 is a thread
+R14=0x000001d14d0e8800 is a thread
+R15=0x0000000000000000 is an unknown value
+
+
+Stack: [0x000000fe00100000,0x000000fe00200000],  sp=0x000000fe001ff2a0,  free space=1020k

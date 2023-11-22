@@ -1,0 +1,8 @@
+###
+POST http://localhost:8080/sip/clickToDial?number=6006@starter.ras.yeastar.com
+
+<> 2023-04-28T101528.400.json
+<> 2023-04-28T101519.400.json
+<> 2023-04-28T101417.400.json
+
+###

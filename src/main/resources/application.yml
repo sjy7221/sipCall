@@ -1,0 +1,35 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  profiles:
+    active: debug
+#  rabbitmq:
+#    host: 101.200.46.118
+#    port: 5672
+#    username: guest
+#    password: guest
+#  jackson:
+#    date-format: yyyy-MM-dd HH:mm:ss
+#    time-zone: GMT+8
+#  redis:
+#    host: localhost
+#    database: 1
+#    port: 6379
+#    password:
+#    jedis:
+#      pool:
+#        max-active: 8
+#        max-wait: 1
+#        max-idle: 10
+#        min-idle: 0
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  typeEnumsPackage: com.bzfar.enums
+#  default-enum-type-handler: org.apache.ibatis.type.EnumOrdinalTypeHandler
+#logging:
+#  level:
+#    root:
+#      com.bzfar: info
+#  file: logs/judge.log
